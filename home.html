@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heartless Manga - Official Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem 1rem;
+      background: url('https://via.placeholder.com/1200x400?text=Heartless+Banner') no-repeat center/cover;
+      background-blend-mode: multiply;
+      background-color: rgba(0,0,0,0.7);
+      position: relative;
+    }
+    .logo {
+      max-width: 300px;
+      margin: 0 auto 1rem;
+      display: block;
+      animation: logoFade 2s ease-in-out;
+    }
+    @keyframes logoFade {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .creative-title {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 4.5rem;
+      color: transparent;
+      background-image: linear-gradient(90deg, crimson, gold, crimson);
+      background-size: 300% 300%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: glow 6s infinite alternate, shimmer 5s infinite linear;
+      letter-spacing: 0.15em;
+      text-shadow: 3px 3px 12px black;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px crimson, 0 0 10px gold, 0 0 20px crimson; }
+      to { text-shadow: 0 0 10px crimson, 0 0 20px gold, 0 0 30px crimson; }
+    }
+    @keyframes shimmer {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    header p {
+      font-size: 1.5rem;
+      text-shadow: 1px 1px 3px black;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+      max-width: 1300px;
+      margin: auto;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+      transition: transform 0.3s ease, background 0.3s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .card h2 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 2rem;
+      background-color: crimson;
+      color: white;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: darkred;
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #ccc;
+      background-color: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://via.placeholder.com/300x100?text=Heartless+Logo" alt="Heartless Logo" class="logo">
+  <h1 class="creative-title">Heartless</h1>
+  <p>A dark and emotional journey of strength, loss, and redemption.</p>
+  <img src="https://drive.usercontent.google.com/download?id=1G0NKM1xh_Hwej1l_Uz3cp4RSn6SCxzoA" width="495" height="743" alt="Heartless Manga Cover">
+  <br>
+  <a href="#read" class="cta-button">Read Now</a>
+</header>
+
+<main>
+  <section class="card">
+    <img src="https://via.placeholder.com/600x400?text=Epic+Battle+Scene" alt="Epic Battle Scene">
+    <h2>About Heartless</h2>
+    <p>"Heartless" follows the story of a warrior battling not only powerful enemies but the darkness within himself. Inspired by the emotional turmoil of betrayal and resilience, this manga reveals the hidden struggles beneath a stoic exterior.</p>
+  </section>
+
+  <section class="card">
+    <img src="https://via.placeholder.com/600x400?text=Creator+Portrait" alt="Creator Portrait">
+    <h2>Meet the Creator</h2>
+    <p>Created by Gandhi Muller, "Heartless" is a deeply personal work reflecting the battles we all fight inside. Combining stunning art and raw storytelling, this manga speaks to anyone who has faced heartbreak and chosen to rise again.</p>
+  </section>
+
+  <section class="card">
+    <img src="https://via.placeholder.com/600x400?text=Read+Heartless" alt="Read Heartless">
+    <h2>Where to Read</h2>
+    <p>Catch exclusive chapters, character art, and more! Subscribe for updates and be the first to dive into the next emotional arc of "Heartless." </p>
+    <a href="#subscribe" class="cta-button">Subscribe Now</a>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Heartless Manga. Created by Gandhi Muller.
+</footer>
+
+</body>
+</html>
